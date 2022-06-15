@@ -1,0 +1,16 @@
+<p>root works</p>
+<div class="row">
+    <div class="col-xs-12">
+        <app-game (intervalFired)="onIntervalFired($event)"></app-game>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-odd *ngFor="let o of oddNumber" [counterOdd]="o"></app-odd>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-even *ngFor="let e of evenNumber" [counterEven]="e"></app-even>
+    </div>
+</div>
